@@ -1,0 +1,52 @@
+/* class selector */
+* {
+	background: rgb(35, 35, 35);
+	color: rgb(91, 91, 91);
+	font-family: "Microsoft Yahei";
+}
+
+QWidget#point {
+    background: red;
+}
+
+QWidget#point:hover {
+    background: white;
+}
+
+QTableView, QHeaderView
+{
+    border-radius: 0px;
+}
+
+QTableView::item:pressed {
+    background: rgb(65,66,67);
+    color: #eff0f1;
+}
+
+QTableView::item:selected{
+    background: rgb(65,66,67);
+    color: #eff0f1;
+}
+
+QTableView::item:selected:active{
+    background: rgb(65,66,67);
+    color: #eff0f1;
+} 
+
+QTableView::item:hover {
+	background-color: #27292b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="deletePress">closeDown.png</file>
+        <file alias="deleteHover">closeHover.png</file>
+        <file alias="delete">closeNormal.png</file>
+        <file alias="cloudPress">cloudDown.png</file>
+        <file alias="cloudHover">cloudHover.png</file>
+        <file alias="cloud">cloudNormal.png</file>
+        <file alias="openPress">openItemDown.png</file>
+        <file alias="openHover">openItemHover.png</file>
+        <file alias="open">openItemNormal.png</file>
+        <file alias="restartPress">restartDown.png</file>
+        <file alias="restartHover">restartHover.png</file>
+        <file alias="restart">restartNormal.png</file>
+        <file alias="startPress">startDown.png</file>
+        <file alias="startHover">startHover.png</file>
+        <file alias="start">startNormal.png</file>
+        <file alias="stopPress">stopDown.png</file>
+        <file alias="stopHover">stopHover.png</file>
+        <file alias="stop">stopNormal.png</file>
+    </qresource>
+    <qresource prefix="/style">
+        <file alias="app">app.qss</file>
+    </qresource>
+</RCC>
