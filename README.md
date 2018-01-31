@@ -6,4 +6,7 @@
 - custom data model and delegate
 
 ## Screenshot
-![Screenshot 1](https://github.com/csuft/VideoTimeline/raw/master/screenshot/2018-01-26_104054.png) 
+![Screenshot 1](https://github.com/csuft/QWidgetsCollection/raw/master/screenshot/preview.gif) 
+
+## References
+- [https://forum.qt.io/topic/69446/qtablewidget-hover-entire-row-without-hard-coding-background-color](https://forum.qt.io/topic/69446/qtablewidget-hover-entire-row-without-hard-coding-background-color)
