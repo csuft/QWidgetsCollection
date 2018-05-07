@@ -18,7 +18,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 	TableViewDelegate* tableViewDelegate = new TableViewDelegate(tableView);
 	
-	setStyleSheet("background: rgb(36,37,38);"); 
+	//setStyleSheet("background: rgb(36,37,38);"); 
 	CustomItemModel* itemModel = new CustomItemModel(QVector<int>{0, 1}, this);
 	itemModel->setColumnCount(3);
 	tableView->setModel(itemModel);

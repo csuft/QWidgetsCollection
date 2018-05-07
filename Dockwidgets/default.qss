@@ -1,0 +1,72 @@
+/* class selector */
+* {
+	background: rgb(35, 35, 35);
+	color: rgb(91, 91, 91);
+	font-family: "Microsoft Yahei";
+}
+
+/* dockable widgets */
+QDockWidget {
+  border: none;
+}
+
+QDockWidget::title {
+   font-family: "Roboto Lt";
+   font-size: 18pt;
+   background: lightgray;
+   padding-left: 10px; 
+   padding-top: 4px; 
+} 
+
+QDockWidget::float-button {
+  background: rgb(45, 45, 45);
+  color: rgb(0,0,0);
+}
+
+QDockWidget::close-button {
+  background: rgb(45, 45, 45);
+  color: rgb(0,0,0);
+}
+
+QTabBar {
+    border: none;
+}
+
+QTabBar::tab {
+    color: white;
+	background: transparent;
+} 
+
+QTabBar::tab:selected {
+    background: red;
+}
+
+QTabBar::tab:hover {
+    background: blue;
+}
+
+QTabBar::tear {
+  image: url(tear_indicator.png);
+}
+
+QTabBar::scroller { /* the width of the scroll buttons */
+  width: 20px;
+}
+
+QTabBar QToolButton { /* the scroll buttons are tool buttons */
+  border-image: url(scrollbutton.png) 2;
+  border-width: 2px;
+}
+
+QTabBar QToolButton::right-arrow { /* the arrow mark in the tool buttons */
+  image: url(rightarrow.png);
+}
+
+QTabBar QToolButton::left-arrow {
+  image: url(leftarrow.png);
+}
+
+QPushButton {
+    border: none;
+	background: transparent;
+} 

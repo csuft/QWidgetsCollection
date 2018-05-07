@@ -1,0 +1,61 @@
+/* class selector */
+* { 
+	color: rgb(91, 91, 91);
+	font-family: "Microsoft Yahei";
+} 
+
+#mainwindow,
+#main{ 
+	border: 1px solid #1077B5;
+	border-radius:0px;
+}
+
+QWidget#widget_title{
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #1B89CA, stop:1 #1077B5);
+}
+
+QLabel#label_icon, QLabel#label_title{
+	border-radius:0px;
+	color: #F0F0F0;
+	background-color:rgba(0,0,0,0);
+	border-style:none;
+}
+
+.QPushButton{
+	border-style: none;
+	border: 0px;
+	color: #F0F0F0;
+	padding: 5px;	
+	min-height: 20px;
+	border-radius:5px;
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #1B89CA, stop:1 #1077B5); 
+}
+
+.QPushButton[focusPolicy="0"] {
+	border-style: none;
+	border: 0px;
+	color: #F0F0F0;
+	padding: 0px;	
+	min-height: 10px;
+	border-radius:3px;
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #1B89CA, stop:1 #1077B5); 
+}
+
+.QPushButton:hover{ 
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #5CACEE, stop:1 #4F94CD);
+}
+
+.QPushButton:pressed{ 
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #1B89CA, stop:1 #1077B5);
+}
+
+QPushButton#minimizeBtn,QPushButton#closeBtn{
+	border-radius:0px;
+	color: #F0F0F0;
+	background-color:rgba(0,0,0,0);
+	border-style:none;
+} 
+
+
+
+

@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/style">
+        <file>default.qss</file>
+    </qresource>
+    <qresource prefix="/image">
+        <file alias="logo">logo.png</file>
+        <file alias="close">close.png</file>
+        <file alias="dock">dock.png</file>
+    </qresource>
+</RCC>

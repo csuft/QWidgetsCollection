@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="close">close.png</file>
+        <file alias="closeHover">close_hover.png</file>
+        <file alias="closePress">close_pressed.png</file>
+        <file alias="min">min.png</file>
+        <file alias="minHover">min_hover.png</file>
+        <file alias="minPress">min_pressed.png</file>
+        <file alias="logo">app.ico</file>
+    </qresource>
+    <qresource prefix="/style">
+        <file alias="app">app.qss</file>
+    </qresource>
+</RCC>

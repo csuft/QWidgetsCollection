@@ -1,36 +1,27 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.8)
-PROJECT(CustomWidgets C CXX)
+project(QWidgetsCollection C CXX)
 
-#############################################################################
-# Compiler and linker options
-ADD_DEFINITIONS(-Wall -DWIN32_LEAN_AND_MEAN)
-IF(CMAKE_BUILD_TYPE STREQUAL Release)
-  ADD_DEFINITIONS(-DNDEBUG)
-ENDIF()
+if (APPLE)
+message(STATUS "Configuring Qt Widgets Collection for macOS...")
+elseif (WIN32)
+message(STATUS "Configuring Qt Widgets Collection for Windows...")
+endif(APPLE)
+################################################################
+# Global constants
+set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
+set(VERSION_MAJOR "1")
+set(VERSION_MINOR "0")
+set(VERSION_PATCH "0")
+set(VERSION_INFO "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}")
 
-SET(CMAKE_AUTOMOC ON)
-SET(CMAKE_AUTORCC ON) 
-SET(CMAKE_CXX_STANDARD 11) 
+################################################################
+# Output project information
+message(STATUS "Qt Widgets Collection Source Path: ${PROJECT_SOURCE_DIR}")
+message(STATUS "Qt Widgets Collection Binary Path: ${PROJECT_BINARY_DIR}")
 
-FILE(GLOB SOURCE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/src/*") 
-FILE(GLOB FORMS "${CMAKE_CURRENT_SOURCE_DIR}/form/*") 
- 
-SET(RESOURCES  
-  ${CMAKE_CURRENT_SOURCE_DIR}/resources/resources.qrc)  
-  
-#################################################################################
-# EXTERNAL LIBS
-FIND_PACKAGE(Qt5 COMPONENTS Core Widgets Gui REQUIRED) 
-qt5_wrap_ui(UI_HEADERS ${FORMS})
-
-INCLUDE_DIRECTORIES(
-${CMAKE_CURRENT_BINARY_DIR}/)
-
-################################################################################
-# Compile target
-ADD_EXECUTABLE ( ${PROJECT_NAME} 
-				${SOURCE_FILES} 
-				${UI_HEADERS}  
-				${RESOURCES})
-# https://www.kdab.com/using-cmake-with-qt-5/
-qt5_use_modules(${PROJECT_NAME} Core Widgets Gui)  
+################################################################
+# sub projects
+add_subdirectory(CustomDialog)
+add_subdirectory(CustomTableView) 
+add_subdirectory(Dockwidgets)
