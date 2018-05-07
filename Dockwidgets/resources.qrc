@@ -4,7 +4,7 @@
     </qresource>
     <qresource prefix="/image">
         <file alias="logo">logo.png</file>
-        <file alias="close">close.png</file>
-        <file alias="dock">dock.png</file>
+        <file alias="left">left.png</file>
+        <file alias="right">right.png</file>
     </qresource>
 </RCC>
