@@ -3,29 +3,12 @@
 	background: rgb(235, 235, 235);
 	color: rgb(91, 91, 91);
 	font-family: "Microsoft Yahei";
+	border: none;
 }
 
 /* dockable widgets */
 QDockWidget {
   border: none;
-}
-
-QDockWidget::title {
-   font-family: "Roboto Lt";
-   font-size: 18pt;
-   background: lightgray;
-   padding-left: 10px; 
-   padding-top: 4px; 
-} 
-
-QDockWidget::float-button {
-  background: rgb(45, 45, 45);
-  color: rgb(0,0,0);
-}
-
-QDockWidget::close-button {
-  background: rgb(45, 45, 45);
-  color: rgb(0,0,0);
 }
 
 QTabBar {
