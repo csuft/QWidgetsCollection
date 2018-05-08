@@ -10,7 +10,7 @@
 GLWidget::GLWidget(QWidget* parent /* = Q_NULLPTR */)
 	: program(Q_NULLPTR),
 	QOpenGLWidget(parent),
-	clearColor(Qt::white) {
+	clearColor(Qt::black) {
 		 
 }
 
@@ -86,10 +86,10 @@ void GLWidget::resizeGL(int width, int height) {
 	glViewport(0, 0, width, height);
 	mModelView.setToIdentity();
 	if (width >= height) {
-		mModelView.ortho(-0.5f, 0.5f, -0.5f, 0.5f, 0.0f, 100.0f);
+		mModelView.ortho(-1.0f, 1.0f, -1.0f*aspectRatio, 1.0f*aspectRatio, 0.0f, 100.0f);
 	}
 	else {
-		mModelView.ortho(-0.5f, 0.5f, 0.0f, 1.0f / aspectRatio, 0.0f, 1.0f);
+		mModelView.ortho(-1.0f*height / width, 1.0f*height / width, -1.0f, 1.0f, 0.0f, 100.0f);
 	}  
 }
 

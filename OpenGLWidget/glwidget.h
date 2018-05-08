@@ -38,7 +38,7 @@ private:
 	QOpenGLTexture* texture;
 	QOpenGLShaderProgram* program;
 	QOpenGLBuffer vbo;
-	QMatrix4x4 mModelView;
+	QMatrix4x4 mModelView; 
 };
 	 
 
