@@ -4,13 +4,11 @@
 #include <QStyleOptionRubberBand>
 
 CustomRubberBand::CustomRubberBand(Shape s, QWidget* parent)
-    : QRubberBand(s, parent)
-{
+    : QRubberBand(s, parent) {
     setAttribute(Qt::WA_TranslucentBackground, true);
 }
 
-void CustomRubberBand::paintEvent(QPaintEvent *event)
-{
+void CustomRubberBand::paintEvent(QPaintEvent *event) {
     QRubberBand::paintEvent(event);
 
     QStyleOptionRubberBand styleOption;
